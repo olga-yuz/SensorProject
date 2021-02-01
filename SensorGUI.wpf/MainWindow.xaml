@@ -5,8 +5,167 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SensorGUI.wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Vehicle Sensor GUI" Height="450" Width="800">
     <Grid>
+        <FlowDocumentReader Margin="10,150,522,32">
+            <FlowDocument>
+                <Table CellSpacing="4">
+                <!--Specificies number of coloumns-->
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                  
+                    </Table.Columns>
 
+                    <TableRowGroup>
+                        <!-- Header row for the table. -->
+                        <TableRow Background="LightGoldenrodYellow">
+                            <TableCell ColumnSpan="1">
+                                <Paragraph FontSize="8pt" FontWeight="Bold">Veichle ID</Paragraph>
+                            </TableCell>
+                            <TableCell ColumnSpan="1">
+                                <Paragraph FontSize="8pt" FontWeight="Bold">Temperature</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                
+                            </TableCell>
+                            
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                
+                            </TableCell>
+                            
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                
+                            </TableCell>
+                            
+                            
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+                                
+                            </TableCell>
+                            
+                        </TableRow>
+
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <FlowDocumentReader Margin="283,150,261,32">
+                    <FlowDocument>
+                        <Table CellSpacing="4">
+                    <!--Specificies number of coloumns-->
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+
+                    </Table.Columns>
+
+                    <TableRowGroup>
+                        <!-- Header row for the table. -->
+                        <TableRow Background="LightGoldenrodYellow">
+                            <TableCell ColumnSpan="1">
+                                <Paragraph FontSize="8pt" FontWeight="Bold">Veichle ID</Paragraph>
+                            </TableCell>
+                            <TableCell ColumnSpan="1">
+                                <Paragraph FontSize="8pt" FontWeight="Bold">Humidity</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+
+                            </TableCell>
+
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+
+                            </TableCell>
+
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+
+                            </TableCell>
+
+
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+
+                            </TableCell>
+
+                        </TableRow>
+
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <FlowDocumentReader Margin="544,150,10,32">
+            <FlowDocument>
+                <Table CellSpacing="4">
+                    <!--Specificies number of coloumns-->
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+
+                    </Table.Columns>
+
+                    <TableRowGroup>
+                        <!-- Header row for the table. -->
+                        <TableRow Background="LightGoldenrodYellow">
+                            <TableCell ColumnSpan="1">
+                                <Paragraph FontSize="8pt" FontWeight="Bold">Veichle ID</Paragraph>
+                            </TableCell>
+                            <TableCell ColumnSpan="1">
+                                <Paragraph FontSize="8pt" FontWeight="Bold">Lat</Paragraph>
+                            </TableCell>
+                            <TableCell ColumnSpan="1">
+                                <Paragraph FontSize="8pt" FontWeight="Bold">Long</Paragraph>
+                            </TableCell>
+                            <TableCell ColumnSpan="1">
+                                <Paragraph FontSize="8pt" FontWeight="Bold">Time</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+
+                            </TableCell>
+
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+
+                            </TableCell>
+
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+
+                            </TableCell>
+
+
+                        </TableRow>
+                        <TableRow Background="lightgray">
+                            <TableCell>
+
+                            </TableCell>
+
+                        </TableRow>
+
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+        
     </Grid>
 </Window>

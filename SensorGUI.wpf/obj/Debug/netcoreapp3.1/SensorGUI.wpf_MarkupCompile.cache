@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\p\Source\Repos\BenI-QA\SensorProject\SensorGUI.wpf\App.xaml
-11151548125
+3-1663950947
 
-3-917710711
-1921654412462
-MainWindow.xaml;
+6-1231467784
+207-1319637380
+LoginScreen.xaml;MainWindow.xaml;Register.xaml;
 
-True
+False
 
