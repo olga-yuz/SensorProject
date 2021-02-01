@@ -16,11 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\SensorProject1\VehicleLib\VehicleLib.csproj" />
+    <ProjectReference Include="..\..\Sensor\SensorProject\VehicleLib\VehicleLib.csproj" />
   </ItemGroup>
 
 </Project>

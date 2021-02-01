@@ -12,7 +12,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VehicleAPI.Controllers;
 using VehicleLib;
+using VehicleLib.Interface;
+using VehicleLib.Repository;
 
 namespace VehicleAPI
 {
@@ -28,13 +31,14 @@ namespace VehicleAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddRouting(r => r.LowercaseUrls = true);
             services.AddControllers();
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("VehicleAPI")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "VehicleAPI", Version = "v1" });
             });
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,5 +62,6 @@ namespace VehicleAPI
                 endpoints.MapControllers();
             });
         }
+        
     }
 }

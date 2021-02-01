@@ -6269,8 +6269,8 @@
     },
     "VehicleLib/1.0.0": {
       "type": "project",
-      "path": "../../SensorProject1/VehicleLib/VehicleLib.csproj",
-      "msbuildProject": "../../SensorProject1/VehicleLib/VehicleLib.csproj"
+      "path": "../../Sensor/SensorProject/VehicleLib/VehicleLib.csproj",
+      "msbuildProject": "../../Sensor/SensorProject/VehicleLib/VehicleLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6284,19 +6284,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Olga\\.nuget\\packages\\": {}
+    "C:\\Users\\winni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
+      "projectUniqueName": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
       "projectName": "VehicleAPI",
-      "projectPath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
-      "packagesPath": "C:\\Users\\Olga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleAPI\\obj\\",
+      "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
+      "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Olga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6310,8 +6310,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Olga\\source\\Git\\SensorProject1\\VehicleLib\\VehicleLib.csproj": {
-              "projectPath": "C:\\Users\\Olga\\source\\Git\\SensorProject1\\VehicleLib\\VehicleLib.csproj"
+            "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\Sensor\\SensorProject\\VehicleLib\\VehicleLib.csproj": {
+              "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\Sensor\\SensorProject\\VehicleLib\\VehicleLib.csproj"
             }
           }
         }
