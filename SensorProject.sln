@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleAPI", "VehicleAPI\Ve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleLib", "VehicleLib\VehicleLib.csproj", "{0F38147A-4924-47D9-8DA0-92E6056BEF0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authorization", "Authorization\Authorization.csproj", "{799CF2D5-7496-4088-B83A-0D110A9F1E79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0F38147A-4924-47D9-8DA0-92E6056BEF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F38147A-4924-47D9-8DA0-92E6056BEF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F38147A-4924-47D9-8DA0-92E6056BEF0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799CF2D5-7496-4088-B83A-0D110A9F1E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799CF2D5-7496-4088-B83A-0D110A9F1E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799CF2D5-7496-4088-B83A-0D110A9F1E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799CF2D5-7496-4088-B83A-0D110A9F1E79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
