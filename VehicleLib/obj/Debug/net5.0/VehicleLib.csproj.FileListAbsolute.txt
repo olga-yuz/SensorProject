@@ -1,8 +1,3 @@
-C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.csprojAssemblyReference.cache
-C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.AssemblyInfoInputs.cache
-C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.AssemblyInfo.cs
-C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.csproj.CoreCompileInputs.cache
 C:\Users\Olga\source\Git\SensorProject1\VehicleLib\bin\Debug\net5.0\VehicleLib.deps.json
 C:\Users\Olga\source\Git\SensorProject1\VehicleLib\bin\Debug\net5.0\VehicleLib.runtimeconfig.json
 C:\Users\Olga\source\Git\SensorProject1\VehicleLib\bin\Debug\net5.0\VehicleLib.runtimeconfig.dev.json
@@ -18,3 +13,18 @@ C:\Users\Olga\source\Git\SensorProject1\VehicleLib\obj\Debug\net5.0\VehicleLib.d
 C:\Users\Olga\source\Git\SensorProject1\VehicleLib\obj\Debug\net5.0\ref\VehicleLib.dll
 C:\Users\Olga\source\Git\SensorProject1\VehicleLib\obj\Debug\net5.0\VehicleLib.pdb
 C:\Users\Olga\source\Git\SensorProject1\VehicleLib\obj\Debug\net5.0\VehicleLib.genruntimeconfig.cache
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\bin\Debug\net5.0\VehicleLib.deps.json
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\bin\Debug\net5.0\VehicleLib.runtimeconfig.json
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\bin\Debug\net5.0\VehicleLib.runtimeconfig.dev.json
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\bin\Debug\net5.0\VehicleLib.dll
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\bin\Debug\net5.0\ref\VehicleLib.dll
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\bin\Debug\net5.0\VehicleLib.pdb
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.csprojAssemblyReference.cache
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.AssemblyInfoInputs.cache
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.AssemblyInfo.cs
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.csproj.CoreCompileInputs.cache
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.dll
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\ref\VehicleLib.dll
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.pdb
+C:\Users\Olga\source\Git\SensorProject\VehicleLib\obj\Debug\net5.0\VehicleLib.genruntimeconfig.cache

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oeelQieBkusht4BO1DcS4ilVm5sEL3tmSUGORxz6NYRNqXHC661AlF5AZeFxtPlQSBBsmS2PsOonaPO2RROOqg==",
+  "dgSpecHash": "EdTmLCz/UTp/KJ3Ez5BGB00lvmzO6jvoLTyuzeuqF2m8lN3HeAfVFo9ygLvUfkNuFzDjbNetzylgkgYu98hhzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Olga\\source\\Git\\SensorProject1\\VehicleLib\\VehicleLib.csproj",
+  "projectFilePath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Olga\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Olga\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

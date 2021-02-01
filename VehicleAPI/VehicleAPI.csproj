@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SensorProject1\VehicleLib\VehicleLib.csproj" />
+    <ProjectReference Include="..\VehicleLib\VehicleLib.csproj" />
   </ItemGroup>
 
 </Project>

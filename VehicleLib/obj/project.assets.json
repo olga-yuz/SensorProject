@@ -6086,11 +6086,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Olga\\source\\Git\\SensorProject1\\VehicleLib\\VehicleLib.csproj",
+      "projectUniqueName": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj",
       "projectName": "VehicleLib",
-      "projectPath": "C:\\Users\\Olga\\source\\Git\\SensorProject1\\VehicleLib\\VehicleLib.csproj",
+      "projectPath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj",
       "packagesPath": "C:\\Users\\Olga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Olga\\source\\Git\\SensorProject1\\VehicleLib\\obj\\",
+      "outputPath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Olga\\AppData\\Roaming\\NuGet\\NuGet.Config",
