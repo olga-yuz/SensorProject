@@ -67,6 +67,7 @@ namespace VehicleAPI.Controllers
                 return Conflict("Vehicle already exists.");
             }
             
+
             var addedVehicle = repository.Vehicles.Create(new Vehicle { temp = vehicle.temp, humidity = vehicle.humidity });
             
             repository.Save();
@@ -88,19 +89,11 @@ namespace VehicleAPI.Controllers
             vehicleToUpdate.temp = vehicle.temp;
             vehicleToUpdate.humidity = vehicle.humidity;
             repository.Save();
-           // var studentsInCourse = repository.Registrations.FindByCondition(c => c.Course.vehicleId == vehicleId).Select(c => c.Student).ToList();
+          
             var vehicleFoundViewModel = new VehicleViewModel { Vehicle = vehicleToUpdate};
             return vehicleFoundViewModel;
         }
-        /*    [HttpDelete("Delete")]
-            public ActionResult<string> DeleteVehicle(int vehicleId)
-            {
-                var vehicleToDelete = VehicleMenu.deleteVehicle(vehicleId, dbContext);
-                if (vehicleToDelete == null)
-                    return NotFound("Sorry, we could not find the vehicle to delete");
-                var deletedVehicleResponse = VehicleMenu.deleteVehicle(vehicleId, dbContext);
-                return deletedVehicleResponse;
-            }*/
+     
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

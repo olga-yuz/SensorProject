@@ -37,7 +37,7 @@ namespace VehicleAPI.Controllers
                 foreach (var RedAlertViewModel in redAlertViewModels)
                 {
                     var alertRecords = repository.Alerts.FindByCondition(r => r.Id == RedAlertViewModel.RedAlert.Id).ToList();
-                  //  RedAlertViewModel.Vehicles = RedAlert.ToList();
+                 
                 }
                 _logger.LogInformation($"{redAlertViewModels.Count} Alerts gotten.");
                 return redAlertViewModels;
@@ -55,20 +55,7 @@ namespace VehicleAPI.Controllers
                     return NotFound($"Alert with ID {Id} not found.");
                 }
                 _logger.LogInformation($"Alert with id {Id} gotten");
-            
-             /*var alerts = repository.Alerts.FindByCondition(c => c.Id == Id).Select(c => c.vehicleId).ToList();
-
            
-            List<Vehicle> vehicles1 = new List<Vehicle>();
-            foreach(int alert in alerts)
-            {
-
-            var vehicle = repository.Vehicles.FindByCondition(c => c.vehicleId == alert).FirstOrDefault();
-                vehicles1.Add(vehicle);
-            }
-
-          
-            var vehicleFoundViewModel = new RedAlertViewModel { RedAlert = alertFound, Vehicles = vehicles1 };*/
                 return alertFound;
             }
 
@@ -82,8 +69,10 @@ namespace VehicleAPI.Controllers
                     _logger.LogError("Data conflict");
                     return Conflict("Alert already exists.");
                 }
-             
-                var addedAlert = repository.Alerts.Create(new RedAlert { vehicleId = alert.vehicleId, time = alert.time });
+            if (alert.vehicleId <= 0)
+                return BadRequest("Please enter a valid vehicle ID");
+
+            var addedAlert = repository.Alerts.Create(new RedAlert { vehicleId = alert.vehicleId, time = alert.time });
                 repository.Save();
                 return new RedAlertViewModel { RedAlert = addedAlert, Vehicles = new List<Vehicle>() };
             }
@@ -110,16 +99,7 @@ namespace VehicleAPI.Controllers
                 return alertFoundViewModel;
            
             }
-        /*
-                [HttpDelete("Delete")]
-                public ActionResult<string> DeleteAlert(int Id)
-                {
-                    var alertToDelete = RedAlertMenu.deleteAlert(Id, dbContext);
-                    if (alertToDelete == null)
-                        return NotFound("Sorry, we could not find the alert to delete");
-                    var deletedalertResponse = RedAlertMenu.deleteAlert(Id, dbContext);
-                    return deletedalertResponse;
-                }*/
+   
 
         // DELETE api/<AlertController>/5
         [HttpDelete("{id}")]
@@ -137,6 +117,24 @@ namespace VehicleAPI.Controllers
             repository.Save();
             _logger.LogCritical($"deleting {alertToDelete.Id} completed");
             return Ok("Alert deleted");
+        }
+
+        //Delete alerts by vehicle
+        [HttpDelete("deletealertbyvehicle")]
+        public ActionResult<string> deleteAlertVehicle(int id)
+        {
+            var alertsToDelete = repository.Alerts.FindByCondition(c => c.vehicleId == id).ToList();
+
+            if (alertsToDelete == null)
+                return NotFound($"Alerts with vehicle id {id} not found");
+            foreach (var alert in alertsToDelete)
+            {
+                repository.Alerts.Delete(alert);
+            }
+
+            repository.Save();
+
+            return "Alert deleted";
         }
     }
 }
