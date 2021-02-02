@@ -78,6 +78,7 @@ namespace VehicleAPI.Controllers
         public ActionResult<VehicleViewModel> Put(int vehicleId, [FromBody] UpdateVehicle vehicle)
         {
             var vehicleToUpdate = repository.Vehicles.FindByCondition(c => c.vehicleId == vehicleId).FirstOrDefault();
+            dbContext.Entry(vehicleToUpdate).Reload();
             if (vehicleToUpdate == null)
             {
                 _logger.LogWarning($"Vehicle with vehicleId {vehicleId} not found.");
@@ -91,14 +92,31 @@ namespace VehicleAPI.Controllers
             var vehicleFoundViewModel = new VehicleViewModel { Vehicle = vehicleToUpdate};
             return vehicleFoundViewModel;
         }
-        [HttpDelete("Delete")]
-        public ActionResult<string> DeleteVehicle(int vehicleId)
+        /*    [HttpDelete("Delete")]
+            public ActionResult<string> DeleteVehicle(int vehicleId)
+            {
+                var vehicleToDelete = VehicleMenu.deleteVehicle(vehicleId, dbContext);
+                if (vehicleToDelete == null)
+                    return NotFound("Sorry, we could not find the vehicle to delete");
+                var deletedVehicleResponse = VehicleMenu.deleteVehicle(vehicleId, dbContext);
+                return deletedVehicleResponse;
+            }*/
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
         {
-            var vehicleToDelete = VehicleMenu.deleteVehicle(vehicleId, dbContext);
+            var vehicleToDelete = repository.Vehicles.FindByCondition(c => c.vehicleId == id).FirstOrDefault();
             if (vehicleToDelete == null)
-                return NotFound("Sorry, we could not find the vehicle to delete");
-            var deletedVehicleResponse = VehicleMenu.deleteVehicle(vehicleId, dbContext);
-            return deletedVehicleResponse;
+            {
+                _logger.LogWarning($"Vehicle with ID {id} not found.");
+                return NotFound($"Vehicle with ID {id} not found.");
+            }
+
+            _logger.LogCritical($"deleting vehicle: {vehicleToDelete.vehicleId} completed");
+            repository.Vehicles.Delete(vehicleToDelete);
+            repository.Save();
+            _logger.LogCritical($"deleting {vehicleToDelete.vehicleId} completed");
+            return Ok("Vehicle deleted");
         }
     }
 }

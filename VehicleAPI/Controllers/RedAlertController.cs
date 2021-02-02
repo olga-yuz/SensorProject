@@ -82,7 +82,7 @@ namespace VehicleAPI.Controllers
                     _logger.LogError("Data conflict");
                     return Conflict("Alert already exists.");
                 }
-               
+             
                 var addedAlert = repository.Alerts.Create(new RedAlert { vehicleId = alert.vehicleId, time = alert.time });
                 repository.Save();
                 return new RedAlertViewModel { RedAlert = addedAlert, Vehicles = new List<Vehicle>() };
@@ -93,28 +93,50 @@ namespace VehicleAPI.Controllers
             public ActionResult<RedAlertViewModel> Put(int id, [FromBody] UpdateAlert alert)
             {
                 var alertToUpdate = repository.Alerts.FindByCondition(c => c.Id == id).FirstOrDefault();
+                dbContext.Entry(alertToUpdate).Reload();
                 if (alertToUpdate == null)
                 {
                     _logger.LogWarning($"Alert with ID {id} not found.");
                     return NotFound($"Alert with ID {id} not found.");
                 }
-                
+           
                 alertToUpdate.vehicleId = alert.vehicleId;
                 alertToUpdate.time = alert.time;
-                repository.Save();
+                
+                repository.Save(); 
+                
                 var vehiclesInAlert = repository.Alerts.FindByCondition(c => c.Id == id).Select(c => c.vehicleId).ToList();
                 var alertFoundViewModel = new RedAlertViewModel { RedAlert = alertToUpdate, Vehicles = new List<Vehicle>() };
                 return alertFoundViewModel;
+           
             }
+        /*
+                [HttpDelete("Delete")]
+                public ActionResult<string> DeleteAlert(int Id)
+                {
+                    var alertToDelete = RedAlertMenu.deleteAlert(Id, dbContext);
+                    if (alertToDelete == null)
+                        return NotFound("Sorry, we could not find the alert to delete");
+                    var deletedalertResponse = RedAlertMenu.deleteAlert(Id, dbContext);
+                    return deletedalertResponse;
+                }*/
 
-        [HttpDelete("Delete")]
-        public ActionResult<string> DeleteAlert(int Id)
+        // DELETE api/<AlertController>/5
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
         {
-            var alertToDelete = RedAlertMenu.deleteAlert(Id, dbContext);
+            var alertToDelete = repository.Alerts.FindByCondition(c => c.Id == id).FirstOrDefault();
             if (alertToDelete == null)
-                return NotFound("Sorry, we could not find the alert to delete");
-            var deletedalertResponse = RedAlertMenu.deleteAlert(Id, dbContext);
-            return deletedalertResponse;
+            {
+                _logger.LogWarning($"Alert with ID {id} not found.");
+                return NotFound($"Alert with ID {id} not found.");
+            }
+           
+            _logger.LogCritical($"Deleting alert for {alertToDelete.Id} completed");
+            repository.Alerts.Delete(alertToDelete);
+            repository.Save();
+            _logger.LogCritical($"deleting {alertToDelete.Id} completed");
+            return Ok("Alert deleted");
         }
     }
 }
