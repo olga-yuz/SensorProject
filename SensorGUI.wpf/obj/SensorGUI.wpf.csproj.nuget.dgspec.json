@@ -4,6 +4,185 @@
     "C:\\Users\\p\\Source\\Repos\\BenI-QA\\SensorProject\\SensorGUI.wpf\\SensorGUI.wpf.csproj": {}
   },
   "projects": {
+    "C:\\Users\\p\\Downloads\\SensorProject-feature-auth\\SensorProject-feature-auth\\Authorization\\Authorization.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\p\\Downloads\\SensorProject-feature-auth\\SensorProject-feature-auth\\Authorization\\Authorization.csproj",
+        "projectName": "Authorization",
+        "projectPath": "C:\\Users\\p\\Downloads\\SensorProject-feature-auth\\SensorProject-feature-auth\\Authorization\\Authorization.csproj",
+        "packagesPath": "C:\\Users\\p\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\p\\Downloads\\SensorProject-feature-auth\\SensorProject-feature-auth\\Authorization\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\p\\Downloads\\SensorProject-feature-VehicleApi\\SensorProject-feature-VehicleApi\\VehicleLib\\VehicleLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\p\\Downloads\\SensorProject-feature-VehicleApi\\SensorProject-feature-VehicleApi\\VehicleLib\\VehicleLib.csproj",
+        "projectName": "VehicleLib",
+        "projectPath": "C:\\Users\\p\\Downloads\\SensorProject-feature-VehicleApi\\SensorProject-feature-VehicleApi\\VehicleLib\\VehicleLib.csproj",
+        "packagesPath": "C:\\Users\\p\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\p\\Downloads\\SensorProject-feature-VehicleApi\\SensorProject-feature-VehicleApi\\VehicleLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\p\\Source\\Repos\\BenI-QA\\SensorProject\\SensorGUI.wpf\\SensorGUI.wpf.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +206,17 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\p\\Downloads\\SensorProject-feature-auth\\SensorProject-feature-auth\\Authorization\\Authorization.csproj": {
+                "projectPath": "C:\\Users\\p\\Downloads\\SensorProject-feature-auth\\SensorProject-feature-auth\\Authorization\\Authorization.csproj"
+              },
+              "C:\\Users\\p\\Downloads\\SensorProject-feature-VehicleApi\\SensorProject-feature-VehicleApi\\VehicleLib\\VehicleLib.csproj": {
+                "projectPath": "C:\\Users\\p\\Downloads\\SensorProject-feature-VehicleApi\\SensorProject-feature-VehicleApi\\VehicleLib\\VehicleLib.csproj"
+              },
+              "C:\\Users\\p\\Source\\Repos\\BenI-QA\\SensorProject\\SensorSignalR\\SensorSignalR.csproj": {
+                "projectPath": "C:\\Users\\p\\Source\\Repos\\BenI-QA\\SensorProject\\SensorSignalR\\SensorSignalR.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -43,6 +232,10 @@
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -56,11 +249,86 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
             "Microsoft.WindowsDesktop.App.WPF": {
               "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\p\\Source\\Repos\\BenI-QA\\SensorProject\\SensorSignalR\\SensorSignalR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\p\\Source\\Repos\\BenI-QA\\SensorProject\\SensorSignalR\\SensorSignalR.csproj",
+        "projectName": "SensorSignalR",
+        "projectPath": "C:\\Users\\p\\Source\\Repos\\BenI-QA\\SensorProject\\SensorSignalR\\SensorSignalR.csproj",
+        "packagesPath": "C:\\Users\\p\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\p\\Source\\Repos\\BenI-QA\\SensorProject\\SensorSignalR\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNet.SignalR.Core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"

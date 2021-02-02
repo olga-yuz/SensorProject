@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorGUI.wpf", "SensorGUI.wpf\SensorGUI.wpf.csproj", "{23253AAF-2081-4AC7-A098-A44226F98DC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorGUI.wpf", "SensorGUI.wpf\SensorGUI.wpf.csproj", "{23253AAF-2081-4AC7-A098-A44226F98DC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorSignalR", "SensorSignalR\SensorSignalR.csproj", "{889718E5-6D26-4E95-B600-8616AE9AFD50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleLib", "..\..\..\..\Downloads\SensorProject-feature-VehicleApi\SensorProject-feature-VehicleApi\VehicleLib\VehicleLib.csproj", "{6B7FA237-C4CC-498B-94BA-3C35A1421AD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authorization", "..\..\..\..\Downloads\SensorProject-feature-auth\SensorProject-feature-auth\Authorization\Authorization.csproj", "{9C452F4F-677B-4E6E-966D-4B589426D598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{23253AAF-2081-4AC7-A098-A44226F98DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23253AAF-2081-4AC7-A098-A44226F98DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23253AAF-2081-4AC7-A098-A44226F98DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{889718E5-6D26-4E95-B600-8616AE9AFD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889718E5-6D26-4E95-B600-8616AE9AFD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889718E5-6D26-4E95-B600-8616AE9AFD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889718E5-6D26-4E95-B600-8616AE9AFD50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B7FA237-C4CC-498B-94BA-3C35A1421AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B7FA237-C4CC-498B-94BA-3C35A1421AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B7FA237-C4CC-498B-94BA-3C35A1421AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B7FA237-C4CC-498B-94BA-3C35A1421AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C452F4F-677B-4E6E-966D-4B589426D598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C452F4F-677B-4E6E-966D-4B589426D598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C452F4F-677B-4E6E-966D-4B589426D598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C452F4F-677B-4E6E-966D-4B589426D598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
