@@ -32,11 +32,7 @@ namespace VehicleAPI.Controllers
             {
                 VehicleViewModels.Add(new VehicleViewModel() { Vehicle = vehicle });
             }
-           /* foreach (var vehicleViewModel in vehicleViewModels)
-            {
-                var courseRegistations = repository.Registrations.FindByCondition(r => r.Course.vehicleId == courseViewModel.Course.vehicleId).ToList();
-            courseViewModel.Students = courseRegistations.Select(c => c.Student).ToList();
-            }*/
+         
         _logger.LogInformation($"{VehicleViewModels.Count} vehicles gotten.");
             return VehicleViewModels;
         }
@@ -53,7 +49,7 @@ namespace VehicleAPI.Controllers
                 return NotFound($"Vehicle with vehicleId {vehicleId} not found.");
             }
             _logger.LogInformation($"Vehicle with vehicleId {vehicleId} gotten");
-           // var students = repository.Registrations.FindByCondition(c => c.Course.vehicleId == vehicleId).Select(c => c.Student).ToList();
+           
       
             var vehicleFoundViewModel = new VehicleViewModel { Vehicle = vehicleFound};
             return vehicleFoundViewModel;
