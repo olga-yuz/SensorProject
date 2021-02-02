@@ -16,4 +16,16 @@ namespace VehicleLib
         public int vehicleId { get; set; }
         public DateTime time { get; set; }
     }
+
+    public class AddAlert
+    {
+        public int vehicleId { get; set; }
+        public DateTime time { get; set; }
+    }
+
+    public class UpdateAlert
+    {
+        public int vehicleId { get; set; }
+        public DateTime time { get; set; }
+    }
 }

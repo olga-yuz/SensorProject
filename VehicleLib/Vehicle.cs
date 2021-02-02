@@ -12,4 +12,16 @@ namespace VehicleLib
         public int temp { get; set; }
         public int humidity { get; set; }
     }
+
+    public class AddVehicle
+    {
+        public int temp { get; set; }
+        public int humidity { get; set; }
+    }
+
+    public class UpdateVehicle
+    {
+        public int temp { get; set; }
+        public int humidity { get; set; }
+    }
 }
