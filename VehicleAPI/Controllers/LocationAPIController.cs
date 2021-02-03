@@ -52,33 +52,60 @@ namespace VehicleAPI.Controllers
         public ActionResult<Location> updateLocation(int id, [FromBody] Location updateLocation)
         {
             var locationToUpdate = repository.Locations.FindByCondition(c => c.Id == id).FirstOrDefault();
-            
-            if (locationToUpdate == null)
+            try
+            {
+                dbContext.Entry(locationToUpdate).Reload();
+                if (updateLocation.vehicleId <= 0)
+                    return BadRequest("Please input a valid vehicle ID");
+
+                locationToUpdate.longitude = updateLocation.longitude;
+                locationToUpdate.latitude = updateLocation.latitude;
+                locationToUpdate.vehicleId = updateLocation.vehicleId;
+
+                repository.Save();
+                return Ok(locationToUpdate);
+            }
+            catch
+            {
                 return NotFound($"Location with id {id} not found");
-            dbContext.Entry(locationToUpdate).Reload();
-            if (updateLocation.vehicleId <= 0)
-                return BadRequest("Please input a valid vehicle ID");
+            }
+            //if (locationToUpdate == null)
+            //    return NotFound($"Location with id {id} not found");
+            //dbContext.Entry(locationToUpdate).Reload();
+            //if (updateLocation.vehicleId <= 0)
+            //    return BadRequest("Please input a valid vehicle ID");
       
-            locationToUpdate.longitude = updateLocation.longitude;
-            locationToUpdate.latitude = updateLocation.latitude;
-            locationToUpdate.vehicleId = updateLocation.vehicleId;
+            //locationToUpdate.longitude = updateLocation.longitude;
+            //locationToUpdate.latitude = updateLocation.latitude;
+            //locationToUpdate.vehicleId = updateLocation.vehicleId;
             
-            repository.Save();
-            return Ok(locationToUpdate);
+            //repository.Save();
+            //return Ok(locationToUpdate);
         }
         //Delete location
         [HttpDelete("deletelocation")]
         public ActionResult<string> deleteLocation(int id)
         {
             var locationToDelete = repository.Locations.FindByCondition(c => c.Id == id).FirstOrDefault();
-            if (locationToDelete == null)
+            try 
+            {
+                repository.Locations.Delete(locationToDelete);
+                repository.Save();
+
+                return "Location deleted";
+            }
+            catch
+            {
                 return NotFound($"Location with id {id} not found");
+            }
+            //if (locationToDelete == null)
+                //return NotFound($"Location with id {id} not found");
 
             
-            repository.Locations.Delete(locationToDelete);
-            repository.Save();
+            //repository.Locations.Delete(locationToDelete);
+            //repository.Save();
 
-            return "Location deleted";
+            //return "Location deleted";
         }
         //Delete locations by vehicle
         [HttpDelete("deletelocationbyvehicle")]
