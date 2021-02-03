@@ -17,10 +17,10 @@ namespace VehicleAPI.Controllers
         private ILogger<VehicleController> _logger;
         private ApplicationDbContext dbContext;
         private IRepositoryWrapper repository;
-        public VehicleController(ILogger<VehicleController> logger, ApplicationDbContext applicationDb, IRepositoryWrapper repositoryWrapper)
+        public VehicleController(ILogger<VehicleController> logger, IRepositoryWrapper repositoryWrapper)
         {
             _logger = logger;
-            dbContext = applicationDb;
+          
             repository = repositoryWrapper;
         }
         [HttpGet]
@@ -79,7 +79,7 @@ namespace VehicleAPI.Controllers
         public ActionResult<VehicleViewModel> Put(int vehicleId, [FromBody] UpdateVehicle vehicle)
         {
             var vehicleToUpdate = repository.Vehicles.FindByCondition(c => c.vehicleId == vehicleId).FirstOrDefault();
-            dbContext.Entry(vehicleToUpdate).Reload();
+           
             if (vehicleToUpdate == null)
             {
                 _logger.LogWarning($"Vehicle with vehicleId {vehicleId} not found.");
@@ -88,6 +88,7 @@ namespace VehicleAPI.Controllers
            
             vehicleToUpdate.temp = vehicle.temp;
             vehicleToUpdate.humidity = vehicle.humidity;
+            var updatedVehicle = repository.Vehicles.Update(vehicleToUpdate);
             repository.Save();
           
             var vehicleFoundViewModel = new VehicleViewModel { Vehicle = vehicleToUpdate};
