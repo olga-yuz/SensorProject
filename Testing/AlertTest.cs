@@ -92,6 +92,17 @@ namespace Testing
             //Assert
             Assert.NotNull(controllerActionResult);
         }
+        [Fact]
+        public void DeleteAlertByVehicleTest()
+        {
+            //Arrange
+            mockRepo.Setup(repo => repo.Alerts.FindByCondition(r => r.vehicleId == It.IsAny<int>())).Returns(GetAlerts());
+            mockRepo.Setup(repo => repo.Alerts.Delete(GetAlert()));
+            //Act
+            var controllerActionResult = alertController.deleteAlertVehicle(It.IsAny<int>());
+            //Assert
+            Assert.NotNull(controllerActionResult);
+        }
 
         [Fact]
         public void UpdateVehicleTest()

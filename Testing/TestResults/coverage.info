@@ -1,0 +1,1346 @@
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Program.cs
+FN:14,System.Void VehicleAPI.Program::Main(System.String[])
+FNDA:0,System.Void VehicleAPI.Program::Main(System.String[])
+DA:15,0
+DA:16,0
+DA:17,0
+FN:19,Microsoft.Extensions.Hosting.IHostBuilder VehicleAPI.Program::CreateHostBuilder(System.String[])
+FNDA:0,Microsoft.Extensions.Hosting.IHostBuilder VehicleAPI.Program::CreateHostBuilder(System.String[])
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Startup.cs
+FN:27,Microsoft.Extensions.Configuration.IConfiguration VehicleAPI.Startup::get_Configuration()
+FNDA:0,Microsoft.Extensions.Configuration.IConfiguration VehicleAPI.Startup::get_Configuration()
+DA:28,0
+FN:31,System.Void VehicleAPI.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,System.Void VehicleAPI.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+FN:43,System.Void VehicleAPI.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+FNDA:0,System.Void VehicleAPI.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:54,0
+DA:56,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+BRDA:45,9,0,0
+BRDA:45,9,1,0
+FN:22,System.Void VehicleAPI.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.Void VehicleAPI.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+LF:29
+LH:0
+BRF:2
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210201115529_InitialMigration.cs
+FN:8,System.Void VehicleAPI.Migrations.InitialMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.InitialMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+FN:54,System.Void VehicleAPI.Migrations.InitialMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.InitialMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:55,0
+DA:56,0
+DA:57,0
+DA:59,0
+DA:60,0
+DA:62,0
+DA:63,0
+DA:64,0
+LF:50
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210201115529_InitialMigration.Designer.cs
+FN:16,System.Void VehicleAPI.Migrations.InitialMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.InitialMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:81,0
+LF:60
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210201115927_SecondMigration.cs
+FN:7,System.Void VehicleAPI.Migrations.SecondMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.SecondMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void VehicleAPI.Migrations.SecondMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.SecondMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+LF:13
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210201115927_SecondMigration.Designer.cs
+FN:16,System.Void VehicleAPI.Migrations.SecondMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.SecondMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:84,0
+LF:63
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210201125032_ThirdMigration.cs
+FN:7,System.Void VehicleAPI.Migrations.ThirdMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.ThirdMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:8,0
+DA:10,0
+FN:12,System.Void VehicleAPI.Migrations.ThirdMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.ThirdMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:13,0
+DA:15,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210201125032_ThirdMigration.Designer.cs
+FN:16,System.Void VehicleAPI.Migrations.ThirdMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.ThirdMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:84,0
+LF:63
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210201153033_firstMigration.cs
+FN:7,System.Void VehicleAPI.Migrations.firstMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.firstMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:8,0
+DA:10,0
+FN:12,System.Void VehicleAPI.Migrations.firstMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.firstMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:13,0
+DA:15,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210201153033_firstMigration.Designer.cs
+FN:16,System.Void VehicleAPI.Migrations.firstMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.firstMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:84,0
+LF:63
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210202105616_redAlertcontroller.cs
+FN:7,System.Void VehicleAPI.Migrations.redAlertcontroller::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.redAlertcontroller::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:8,0
+DA:10,0
+FN:12,System.Void VehicleAPI.Migrations.redAlertcontroller::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.redAlertcontroller::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:13,0
+DA:15,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210202105616_redAlertcontroller.Designer.cs
+FN:16,System.Void VehicleAPI.Migrations.redAlertcontroller::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.redAlertcontroller::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:84,0
+LF:63
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210202120115_FourthMigration.cs
+FN:7,System.Void VehicleAPI.Migrations.FourthMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.FourthMigration::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:8,0
+DA:10,0
+FN:12,System.Void VehicleAPI.Migrations.FourthMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.FourthMigration::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:13,0
+DA:15,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\20210202120115_FourthMigration.Designer.cs
+FN:16,System.Void VehicleAPI.Migrations.FourthMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.FourthMigration::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:84,0
+LF:63
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Migrations\ApplicationDbContextModelSnapshot.cs
+FN:14,System.Void VehicleAPI.Migrations.ApplicationDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void VehicleAPI.Migrations.ApplicationDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:15,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:82,0
+LF:63
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Controllers\LocationAPIController.cs
+FN:24,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.Location> VehicleAPI.Controllers.LocationAPIController::addLocation(VehicleLib.Location)
+FNDA:2,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.Location> VehicleAPI.Controllers.LocationAPIController::addLocation(VehicleLib.Location)
+DA:25,2
+DA:27,2
+DA:28,1
+DA:30,1
+DA:31,1
+DA:32,1
+DA:33,2
+BRDA:27,15,0,1
+BRDA:27,15,1,1
+FN:36,Microsoft.AspNetCore.Mvc.ActionResult`1<System.Collections.Generic.IEnumerable`1<VehicleLib.Location>> VehicleAPI.Controllers.LocationAPIController::allLocations()
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<System.Collections.Generic.IEnumerable`1<VehicleLib.Location>> VehicleAPI.Controllers.LocationAPIController::allLocations()
+DA:37,1
+DA:38,1
+DA:39,1
+DA:40,1
+FN:43,Microsoft.AspNetCore.Mvc.ActionResult`1<System.Collections.Generic.IEnumerable`1<VehicleLib.Location>> VehicleAPI.Controllers.LocationAPIController::locationsByVehicle(System.Int32)
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<System.Collections.Generic.IEnumerable`1<VehicleLib.Location>> VehicleAPI.Controllers.LocationAPIController::locationsByVehicle(System.Int32)
+DA:44,1
+DA:46,1
+DA:48,1
+DA:49,1
+FN:52,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.Location> VehicleAPI.Controllers.LocationAPIController::updateLocation(System.Int32,VehicleLib.Location)
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.Location> VehicleAPI.Controllers.LocationAPIController::updateLocation(System.Int32,VehicleLib.Location)
+DA:53,1
+DA:54,1
+DA:56,1
+DA:57,1
+DA:58,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:65,0
+DA:66,0
+DA:68,1
+DA:69,1
+DA:70,1
+DA:84,1
+BRDA:58,162,0,0
+BRDA:58,162,1,0
+FN:87,Microsoft.AspNetCore.Mvc.ActionResult`1<System.String> VehicleAPI.Controllers.LocationAPIController::deleteLocation(System.Int32)
+FNDA:2,Microsoft.AspNetCore.Mvc.ActionResult`1<System.String> VehicleAPI.Controllers.LocationAPIController::deleteLocation(System.Int32)
+DA:88,2
+DA:89,2
+DA:91,2
+DA:92,2
+DA:93,2
+DA:95,2
+DA:97,0
+DA:98,0
+DA:99,0
+DA:109,2
+FN:112,Microsoft.AspNetCore.Mvc.ActionResult`1<System.String> VehicleAPI.Controllers.LocationAPIController::deleteLocationVehicle(System.Int32)
+FNDA:2,Microsoft.AspNetCore.Mvc.ActionResult`1<System.String> VehicleAPI.Controllers.LocationAPIController::deleteLocationVehicle(System.Int32)
+DA:113,2
+DA:114,2
+DA:116,2
+DA:117,0
+DA:118,6
+DA:119,0
+DA:120,0
+DA:121,0
+DA:123,2
+DA:125,2
+DA:126,2
+BRDA:116,135,0,0
+BRDA:116,135,1,2
+BRDA:118,221,1,0
+BRDA:118,221,0,2
+FN:16,System.Void VehicleAPI.Controllers.LocationAPIController::.ctor(VehicleLib.Interface.IRepositoryWrapper,VehicleLib.ApplicationDbContext)
+FNDA:9,System.Void VehicleAPI.Controllers.LocationAPIController::.ctor(VehicleLib.Interface.IRepositoryWrapper,VehicleLib.ApplicationDbContext)
+DA:17,9
+DA:18,9
+DA:19,9
+DA:20,9
+DA:21,9
+LF:56
+LH:42
+BRF:8
+BRH:4
+FNF:7
+FNH:7
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Controllers\RedAlertController.cs
+FN:29,System.Collections.Generic.IEnumerable`1<VehicleLib.RedAlertViewModel> VehicleAPI.Controllers.RedAlertController::Get()
+FNDA:1,System.Collections.Generic.IEnumerable`1<VehicleLib.RedAlertViewModel> VehicleAPI.Controllers.RedAlertController::Get()
+DA:30,1
+DA:31,1
+DA:32,1
+DA:33,7
+DA:34,2
+DA:35,2
+DA:36,2
+DA:37,7
+DA:38,2
+DA:39,2
+DA:41,2
+DA:42,1
+DA:43,1
+DA:44,1
+BRDA:33,69,1,2
+BRDA:33,69,0,1
+BRDA:37,288,1,2
+BRDA:37,288,0,1
+FN:48,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.RedAlert> VehicleAPI.Controllers.RedAlertController::Get(System.Int32)
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.RedAlert> VehicleAPI.Controllers.RedAlertController::Get(System.Int32)
+DA:49,1
+DA:50,1
+DA:52,1
+DA:53,1
+DA:54,1
+DA:55,1
+DA:57,0
+DA:59,0
+DA:60,1
+BRDA:52,135,0,1
+BRDA:52,135,1,0
+FN:64,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.RedAlertViewModel> VehicleAPI.Controllers.RedAlertController::Post(VehicleLib.AddAlert)
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.RedAlertViewModel> VehicleAPI.Controllers.RedAlertController::Post(VehicleLib.AddAlert)
+DA:65,1
+DA:66,1
+DA:67,1
+DA:68,0
+DA:69,0
+DA:70,0
+DA:72,1
+DA:73,0
+DA:75,1
+DA:76,1
+DA:77,1
+DA:78,1
+BRDA:67,255,0,0
+BRDA:67,255,1,1
+BRDA:72,324,0,0
+BRDA:72,324,1,1
+FN:82,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.RedAlertViewModel> VehicleAPI.Controllers.RedAlertController::Put(System.Int32,VehicleLib.UpdateAlert)
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.RedAlertViewModel> VehicleAPI.Controllers.RedAlertController::Put(System.Int32,VehicleLib.UpdateAlert)
+DA:83,1
+DA:84,1
+DA:86,1
+DA:87,1
+DA:88,1
+DA:89,1
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:101,1
+BRDA:86,140,0,1
+BRDA:86,140,1,0
+FN:106,Microsoft.AspNetCore.Mvc.IActionResult VehicleAPI.Controllers.RedAlertController::Delete(System.Int32)
+FNDA:1,Microsoft.AspNetCore.Mvc.IActionResult VehicleAPI.Controllers.RedAlertController::Delete(System.Int32)
+DA:107,1
+DA:108,1
+DA:109,1
+DA:110,1
+DA:111,1
+DA:112,1
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,1
+BRDA:109,135,0,1
+BRDA:109,135,1,0
+FN:124,Microsoft.AspNetCore.Mvc.ActionResult`1<System.String> VehicleAPI.Controllers.RedAlertController::deleteAlertVehicle(System.Int32)
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<System.String> VehicleAPI.Controllers.RedAlertController::deleteAlertVehicle(System.Int32)
+DA:125,1
+DA:126,1
+DA:128,1
+DA:129,0
+DA:130,3
+DA:131,0
+DA:132,0
+DA:133,0
+DA:135,1
+DA:137,1
+DA:138,1
+BRDA:128,135,0,0
+BRDA:128,135,1,1
+BRDA:130,221,1,0
+BRDA:130,221,0,1
+FN:19,System.Void VehicleAPI.Controllers.RedAlertController::.ctor(Microsoft.Extensions.Logging.ILogger`1<VehicleAPI.Controllers.RedAlertController>,VehicleLib.Interface.IRepositoryWrapper)
+FNDA:6,System.Void VehicleAPI.Controllers.RedAlertController::.ctor(Microsoft.Extensions.Logging.ILogger`1<VehicleAPI.Controllers.RedAlertController>,VehicleLib.Interface.IRepositoryWrapper)
+DA:20,6
+DA:21,6
+DA:22,6
+DA:24,6
+DA:26,6
+LF:77
+LH:55
+BRF:18
+BRH:11
+FNF:7
+FNH:7
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleAPI\Controllers\VehicleController.cs
+FN:27,System.Collections.Generic.IEnumerable`1<VehicleLib.VehicleViewModel> VehicleAPI.Controllers.VehicleController::Get()
+FNDA:1,System.Collections.Generic.IEnumerable`1<VehicleLib.VehicleViewModel> VehicleAPI.Controllers.VehicleController::Get()
+DA:28,1
+DA:29,1
+DA:30,1
+DA:31,7
+DA:32,2
+DA:33,2
+DA:34,2
+DA:36,1
+DA:37,1
+DA:38,1
+BRDA:31,69,1,2
+BRDA:31,69,0,1
+FN:42,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.VehicleViewModel> VehicleAPI.Controllers.VehicleController::Get(System.Int32)
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.VehicleViewModel> VehicleAPI.Controllers.VehicleController::Get(System.Int32)
+DA:43,1
+DA:44,1
+DA:46,1
+DA:47,1
+DA:48,1
+DA:49,1
+DA:51,0
+DA:54,0
+DA:55,0
+DA:56,1
+BRDA:46,137,0,1
+BRDA:46,137,1,0
+FN:60,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.VehicleViewModel> VehicleAPI.Controllers.VehicleController::Post(VehicleLib.AddVehicle)
+FNDA:2,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.VehicleViewModel> VehicleAPI.Controllers.VehicleController::Post(VehicleLib.AddVehicle)
+DA:61,2
+DA:62,2
+DA:64,2
+DA:65,0
+DA:66,0
+DA:67,0
+DA:71,2
+DA:73,2
+DA:75,2
+DA:76,2
+BRDA:64,239,0,0
+BRDA:64,239,1,2
+FN:79,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.VehicleViewModel> VehicleAPI.Controllers.VehicleController::Put(System.Int32,VehicleLib.UpdateVehicle)
+FNDA:1,Microsoft.AspNetCore.Mvc.ActionResult`1<VehicleLib.VehicleViewModel> VehicleAPI.Controllers.VehicleController::Put(System.Int32,VehicleLib.UpdateVehicle)
+DA:80,1
+DA:81,1
+DA:83,1
+DA:84,1
+DA:85,1
+DA:86,1
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:94,0
+DA:95,0
+DA:96,1
+BRDA:83,140,0,1
+BRDA:83,140,1,0
+FN:100,Microsoft.AspNetCore.Mvc.IActionResult VehicleAPI.Controllers.VehicleController::Delete(System.Int32)
+FNDA:1,Microsoft.AspNetCore.Mvc.IActionResult VehicleAPI.Controllers.VehicleController::Delete(System.Int32)
+DA:101,1
+DA:102,1
+DA:103,1
+DA:104,1
+DA:105,1
+DA:106,1
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,1
+BRDA:103,135,0,1
+BRDA:103,135,1,0
+FN:19,System.Void VehicleAPI.Controllers.VehicleController::.ctor(Microsoft.Extensions.Logging.ILogger`1<VehicleAPI.Controllers.VehicleController>,VehicleLib.Interface.IRepositoryWrapper)
+FNDA:6,System.Void VehicleAPI.Controllers.VehicleController::.ctor(Microsoft.Extensions.Logging.ILogger`1<VehicleAPI.Controllers.VehicleController>,VehicleLib.Interface.IRepositoryWrapper)
+DA:20,6
+DA:21,6
+DA:22,6
+DA:24,6
+DA:25,6
+LF:60
+LH:43
+BRF:10
+BRH:6
+FNF:6
+FNH:6
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\ApplicationDbContext.cs
+FN:12,Microsoft.Extensions.Configuration.IConfiguration VehicleLib.ApplicationDbContext::get_Configuration()
+FNDA:0,Microsoft.Extensions.Configuration.IConfiguration VehicleLib.ApplicationDbContext::get_Configuration()
+DA:13,0
+FN:16,Microsoft.EntityFrameworkCore.DbSet`1<VehicleLib.Vehicle> VehicleLib.ApplicationDbContext::get_Vehicles()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<VehicleLib.Vehicle> VehicleLib.ApplicationDbContext::get_Vehicles()
+DA:17,0
+FN:17,Microsoft.EntityFrameworkCore.DbSet`1<VehicleLib.Location> VehicleLib.ApplicationDbContext::get_Locations()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<VehicleLib.Location> VehicleLib.ApplicationDbContext::get_Locations()
+DA:18,0
+FN:18,Microsoft.EntityFrameworkCore.DbSet`1<VehicleLib.RedAlert> VehicleLib.ApplicationDbContext::get_Alerts()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<VehicleLib.RedAlert> VehicleLib.ApplicationDbContext::get_Alerts()
+DA:19,0
+FN:13,System.Void VehicleLib.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<VehicleLib.ApplicationDbContext>)
+FNDA:0,System.Void VehicleLib.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<VehicleLib.ApplicationDbContext>)
+DA:14,0
+DA:15,0
+DA:16,0
+LF:7
+LH:0
+BRF:0
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\Location.cs
+FN:14,System.Int32 VehicleLib.Location::get_Id()
+FNDA:32,System.Int32 VehicleLib.Location::get_Id()
+DA:15,32
+FN:15,System.Int32 VehicleLib.Location::get_vehicleId()
+FNDA:36,System.Int32 VehicleLib.Location::get_vehicleId()
+DA:16,36
+FN:16,System.Single VehicleLib.Location::get_latitude()
+FNDA:34,System.Single VehicleLib.Location::get_latitude()
+DA:17,34
+FN:17,System.Single VehicleLib.Location::get_longitude()
+FNDA:34,System.Single VehicleLib.Location::get_longitude()
+DA:18,34
+FN:18,System.DateTime VehicleLib.Location::get_time()
+FNDA:34,System.DateTime VehicleLib.Location::get_time()
+DA:19,34
+LF:5
+LH:5
+BRF:0
+BRH:0
+FNF:5
+FNH:5
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\LocationMenu.cs
+FN:11,System.String VehicleLib.LocationMenu::deleteLocation(System.Int32,VehicleLib.ApplicationDbContext)
+FNDA:0,System.String VehicleLib.LocationMenu::deleteLocation(System.Int32,VehicleLib.ApplicationDbContext)
+DA:12,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+BRDA:15,125,0,0
+BRDA:15,125,1,0
+LF:9
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\RedAlert.cs
+FN:14,System.Int32 VehicleLib.RedAlert::get_Id()
+FNDA:0,System.Int32 VehicleLib.RedAlert::get_Id()
+DA:15,0
+FN:15,System.Int32 VehicleLib.RedAlert::get_vehicleId()
+FNDA:33,System.Int32 VehicleLib.RedAlert::get_vehicleId()
+DA:16,33
+FN:16,System.DateTime VehicleLib.RedAlert::get_time()
+FNDA:33,System.DateTime VehicleLib.RedAlert::get_time()
+DA:17,33
+FN:21,System.Int32 VehicleLib.AddAlert::get_vehicleId()
+FNDA:8,System.Int32 VehicleLib.AddAlert::get_vehicleId()
+DA:22,8
+FN:22,System.DateTime VehicleLib.AddAlert::get_time()
+FNDA:7,System.DateTime VehicleLib.AddAlert::get_time()
+DA:23,7
+FN:27,System.Int32 VehicleLib.UpdateAlert::get_vehicleId()
+FNDA:6,System.Int32 VehicleLib.UpdateAlert::get_vehicleId()
+DA:28,6
+FN:28,System.DateTime VehicleLib.UpdateAlert::get_time()
+FNDA:6,System.DateTime VehicleLib.UpdateAlert::get_time()
+DA:29,6
+LF:7
+LH:6
+BRF:0
+BRH:0
+FNF:7
+FNH:6
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\RedAlertMenu.cs
+FN:11,System.String VehicleLib.RedAlertMenu::deleteAlert(System.Int32,VehicleLib.ApplicationDbContext)
+FNDA:0,System.String VehicleLib.RedAlertMenu::deleteAlert(System.Int32,VehicleLib.ApplicationDbContext)
+DA:12,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+BRDA:15,125,0,0
+BRDA:15,125,1,0
+LF:9
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\RedAlertViewModel.cs
+FN:10,VehicleLib.RedAlert VehicleLib.RedAlertViewModel::get_RedAlert()
+FNDA:3,VehicleLib.RedAlert VehicleLib.RedAlertViewModel::get_RedAlert()
+DA:11,3
+FN:11,System.Collections.Generic.List`1<VehicleLib.Vehicle> VehicleLib.RedAlertViewModel::get_Vehicles()
+FNDA:1,System.Collections.Generic.List`1<VehicleLib.Vehicle> VehicleLib.RedAlertViewModel::get_Vehicles()
+DA:12,1
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\Vehicle.cs
+FN:10,System.Int32 VehicleLib.Vehicle::get_vehicleId()
+FNDA:30,System.Int32 VehicleLib.Vehicle::get_vehicleId()
+DA:11,30
+FN:11,System.Int32 VehicleLib.Vehicle::get_temp()
+FNDA:32,System.Int32 VehicleLib.Vehicle::get_temp()
+DA:12,32
+FN:12,System.Int32 VehicleLib.Vehicle::get_humidity()
+FNDA:32,System.Int32 VehicleLib.Vehicle::get_humidity()
+DA:13,32
+FN:17,System.Int32 VehicleLib.AddVehicle::get_temp()
+FNDA:14,System.Int32 VehicleLib.AddVehicle::get_temp()
+DA:18,14
+FN:18,System.Int32 VehicleLib.AddVehicle::get_humidity()
+FNDA:14,System.Int32 VehicleLib.AddVehicle::get_humidity()
+DA:19,14
+FN:23,System.Int32 VehicleLib.UpdateVehicle::get_temp()
+FNDA:6,System.Int32 VehicleLib.UpdateVehicle::get_temp()
+DA:24,6
+FN:24,System.Int32 VehicleLib.UpdateVehicle::get_humidity()
+FNDA:6,System.Int32 VehicleLib.UpdateVehicle::get_humidity()
+DA:25,6
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:7
+FNH:7
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\VehicleMenu.cs
+FN:11,System.String VehicleLib.VehicleMenu::deleteVehicle(System.Int32,VehicleLib.ApplicationDbContext)
+FNDA:0,System.String VehicleLib.VehicleMenu::deleteVehicle(System.Int32,VehicleLib.ApplicationDbContext)
+DA:12,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+BRDA:15,125,0,0
+BRDA:15,125,1,0
+LF:9
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\VehicleViewModel.cs
+FN:10,VehicleLib.Vehicle VehicleLib.VehicleViewModel::get_Vehicle()
+FNDA:4,VehicleLib.Vehicle VehicleLib.VehicleViewModel::get_Vehicle()
+DA:11,4
+LF:1
+LH:1
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\Repository\LocationRepository.cs
+FN:11,System.Void VehicleLib.Repository.LocationRepository::.ctor(VehicleLib.ApplicationDbContext)
+FNDA:0,System.Void VehicleLib.Repository.LocationRepository::.ctor(VehicleLib.ApplicationDbContext)
+DA:12,0
+DA:13,0
+DA:15,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\Repository\RedAlertRepository.cs
+FN:11,System.Void VehicleLib.Repository.RedAlertRepository::.ctor(VehicleLib.ApplicationDbContext)
+FNDA:0,System.Void VehicleLib.Repository.RedAlertRepository::.ctor(VehicleLib.ApplicationDbContext)
+DA:12,0
+DA:13,0
+DA:15,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\Repository\Repository.cs
+FN:13,VehicleLib.ApplicationDbContext VehicleLib.Repository.Repository`1::get_RepositoryContext()
+FNDA:0,VehicleLib.ApplicationDbContext VehicleLib.Repository.Repository`1::get_RepositoryContext()
+DA:14,0
+FN:19,T VehicleLib.Repository.Repository`1::Create(T)
+FNDA:0,T VehicleLib.Repository.Repository`1::Create(T)
+DA:20,0
+DA:21,0
+DA:22,0
+FN:24,System.Void VehicleLib.Repository.Repository`1::Delete(T)
+FNDA:0,System.Void VehicleLib.Repository.Repository`1::Delete(T)
+DA:25,0
+DA:26,0
+DA:27,0
+FN:29,System.Collections.Generic.IEnumerable`1<T> VehicleLib.Repository.Repository`1::FindAll()
+FNDA:0,System.Collections.Generic.IEnumerable`1<T> VehicleLib.Repository.Repository`1::FindAll()
+DA:30,0
+DA:31,0
+DA:32,0
+FN:34,System.Collections.Generic.IEnumerable`1<T> VehicleLib.Repository.Repository`1::FindByCondition(System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>>)
+FNDA:0,System.Collections.Generic.IEnumerable`1<T> VehicleLib.Repository.Repository`1::FindByCondition(System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>>)
+DA:35,0
+DA:36,0
+DA:37,0
+FN:39,T VehicleLib.Repository.Repository`1::Update(T)
+FNDA:0,T VehicleLib.Repository.Repository`1::Update(T)
+DA:40,0
+DA:41,0
+DA:42,0
+FN:14,System.Void VehicleLib.Repository.Repository`1::.ctor(VehicleLib.ApplicationDbContext)
+FNDA:0,System.Void VehicleLib.Repository.Repository`1::.ctor(VehicleLib.ApplicationDbContext)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+LF:20
+LH:0
+BRF:0
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\Repository\RepositoryWrapper.cs
+FN:24,VehicleLib.Interface.IVehicleRepository VehicleLib.Repository.RepositoryWrapper::get_Vehicles()
+FNDA:0,VehicleLib.Interface.IVehicleRepository VehicleLib.Repository.RepositoryWrapper::get_Vehicles()
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+BRDA:26,12,0,0
+BRDA:26,12,1,0
+FN:35,VehicleLib.Interface.ILocationRepository VehicleLib.Repository.RepositoryWrapper::get_Locations()
+FNDA:0,VehicleLib.Interface.ILocationRepository VehicleLib.Repository.RepositoryWrapper::get_Locations()
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+BRDA:37,12,0,0
+BRDA:37,12,1,0
+FN:46,VehicleLib.Interface.IRedAlertRepository VehicleLib.Repository.RepositoryWrapper::get_Alerts()
+FNDA:0,VehicleLib.Interface.IRedAlertRepository VehicleLib.Repository.RepositoryWrapper::get_Alerts()
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+BRDA:48,12,0,0
+BRDA:48,12,1,0
+FN:56,System.Void VehicleLib.Repository.RepositoryWrapper::VehicleLib.Interface.IRepositoryWrapper.Save()
+FNDA:0,System.Void VehicleLib.Repository.RepositoryWrapper::VehicleLib.Interface.IRepositoryWrapper.Save()
+DA:57,0
+DA:58,0
+DA:59,0
+FN:12,System.Void VehicleLib.Repository.RepositoryWrapper::.ctor(VehicleLib.ApplicationDbContext)
+FNDA:0,System.Void VehicleLib.Repository.RepositoryWrapper::.ctor(VehicleLib.ApplicationDbContext)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+LF:28
+LH:0
+BRF:6
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:C:\Users\Olga\source\Git\SensorProject\VehicleLib\Repository\VehicleRepository.cs
+FN:11,System.Void VehicleLib.Repository.VehicleRepository::.ctor(VehicleLib.ApplicationDbContext)
+FNDA:0,System.Void VehicleLib.Repository.VehicleRepository::.ctor(VehicleLib.ApplicationDbContext)
+DA:12,0
+DA:13,0
+DA:15,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record

@@ -99,4 +99,3 @@ C:\Users\Olga\source\Git\SensorProject\SensorProject-WPF\SensorGUI.wpf\obj\Debug
 C:\Users\Olga\source\Git\SensorProject\SensorProject-WPF\SensorGUI.wpf\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\Olga\source\Git\SensorProject\SensorProject-WPF\SensorGUI.wpf\obj\Debug\net5.0-windows\SensorGUI.wpf_MarkupCompile.cache
 C:\Users\Olga\source\Git\SensorProject\SensorProject-WPF\SensorGUI.wpf\obj\Debug\net5.0-windows\SensorGUI.wpf_MarkupCompile.lref
-C:\Users\Olga\source\Git\SensorProject\SensorProject-WPF\SensorGUI.wpf\obj\Debug\net5.0-windows\SensorGUI.wpf.pdb
