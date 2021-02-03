@@ -12,4 +12,21 @@ namespace VehicleLib.Interface
         public int temp { get; set; }
         public int humidity { get; set; }
     }
+
+    public interface IAddVehicle
+    {
+        public int temp { get; set; }
+        public int humidity { get; set; }
+    }
+
+    public interface IUpdateVehicle
+    {
+        public int temp { get; set; }
+        public int humidity { get; set; }
+    }
+
+    public interface IVehicleViewModel
+    {
+        public IVehicle Vehicle { get; set; }
+    }
 }
