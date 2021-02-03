@@ -16,11 +16,11 @@ namespace VehicleAPI.Controllers
     {
             private ILogger<RedAlertController> _logger;
             private IRepositoryWrapper repository;
-            private ApplicationDbContext dbContext;
-        public RedAlertController(ILogger<RedAlertController> logger, ApplicationDbContext applicationDb, IRepositoryWrapper repositoryWrapper)
+            
+        public RedAlertController(ILogger<RedAlertController> logger,  IRepositoryWrapper repositoryWrapper)
             {
                 _logger = logger;
-                dbContext = applicationDb;
+              
                 repository = repositoryWrapper;
            
         }
@@ -82,16 +82,16 @@ namespace VehicleAPI.Controllers
             public ActionResult<RedAlertViewModel> Put(int id, [FromBody] UpdateAlert alert)
             {
                 var alertToUpdate = repository.Alerts.FindByCondition(c => c.Id == id).FirstOrDefault();
-                dbContext.Entry(alertToUpdate).Reload();
+              //  dbContext.Entry(alertToUpdate).Reload();
                 if (alertToUpdate == null)
                 {
                     _logger.LogWarning($"Alert with ID {id} not found.");
                     return NotFound($"Alert with ID {id} not found.");
                 }
            
-                alertToUpdate.vehicleId = alert.vehicleId;
+            alertToUpdate.vehicleId = alert.vehicleId;
                 alertToUpdate.time = alert.time;
-                
+                 var updatedAlert = repository.Alerts.Update(alertToUpdate);
                 repository.Save(); 
                 
                 var vehiclesInAlert = repository.Alerts.FindByCondition(c => c.Id == id).Select(c => c.vehicleId).ToList();
