@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using VehicleLib;
@@ -14,33 +14,29 @@ namespace SensorGUI.wpf
     {
         // private HubConnection connection;
         private HubConnection connection;
-        private List<VehicleTemp> allTempVehicles;
-        private List<VehicleHumid> allHumidVehicles;
-        private List<Location> allVehicleLocations;
+        private List<VehicleTemp> allTempVehicles, getTempVehicles;
+        private List<VehicleHumid> allHumidVehicles, getHumidVehicles;
+        private List<Location> allVehicleLocations, getLocationVehicles;
+        private List<RedAlert> redAlertVehicles;
         private Vehicle selectedVehicle = new Vehicle();
         private Location location = new Location();
         public MainWindow()
         {
             InitializeComponent();
+            
             GetAllVehiclesTemp();
             GetAllVehiclesHumid();
-           // GetAllVehiclesLocation();
-           /* connection = new HubConnectionBuilder()
-                .WithUrl("https://localhost:44319/datahub")
-                .Build();
-            connection.Closed += async (error) =>
-           {
-               await Task.Delay(new Random().Next(0, 5) * 1000);
-               await connection.StartAsync();
-           };*/
+            GetAllVehiclesLocation();
+           
         }
 
         private async void GetAllVehiclesTemp()
         {
             allTempVehicles = await VehicleService.GetAllVehicleTemp();
             TempListView.ItemsSource = allTempVehicles;
+            
         }
-        private async void GetAllVehiclesHumid()
+       private async void GetAllVehiclesHumid()
         {
             allHumidVehicles = await VehicleService.GetAllVehicleHumid();
             HumidListView.ItemsSource = allHumidVehicles;
@@ -58,68 +54,58 @@ namespace SensorGUI.wpf
             SingleTableStackPanel.Visibility = Visibility.Visible;
         }
 
-        private  void Create_Button(object sender, SelectionChangedEventArgs e)
+        private async void Create_Button(object sender, RoutedEventArgs e)
         {
-        /**    try
-            {
-                await connection.StartAsync();
-                TempListView.Items.Add("Connection started");
-               
-            }
-            catch (Exception ex)
-            {
-                TempListView.Items.Add(ex.Message);
-                HumidListView.Items.Add(ex.Message);
-                GPSListView.Items.Add(ex.Message);
-            }
 
-            connection.On<int, int>("ReceiveDataTemp", (id, temp) =>
+            var VehicleAddModel = new AddVehicle
             {
-                this.Dispatcher.Invoke(() =>
-                {
-                    var newTemp = $"{id}: {temp}";
-                    TempListView.Items.Add(newTemp);
-                });
-            });
-            connection.On<int, int>("ReceiveDataHumid", (id, humid) =>
-            {
-                this.Dispatcher.Invoke(() =>
-                {
-                    var newHumid = $"{id}: {humid}";
-                    HumidListView.Items.Add(newHumid);
-                });
-            });
-            connection.On<int, int, int, int>("HumidData", (id, lat, _long, time) =>
-            {
-                this.Dispatcher.Invoke(() =>
-                {
-                    var newGPS = $"{id}: {lat}, {_long}, {time}";
-                    GPSListView.Items.Add(newGPS);
-                });
-            });
+                temp = int.Parse(TempTextBox.Text),
+                humidity = int.Parse(HumidTextBox.Text),
+            };
+            //var newLocation = new Location
+            //{
 
-            try
+           //     latitude = int.Parse(LatTextBox.Text),
+           //     longitude = int.Parse(LongTextBox.Text),
+           // };
+            var addVehicleResponse = await VehicleService.AddVehicle(VehicleAddModel);
+            //var addVehicleLocation = await VehicleService.AddLocation(newLocation);
+            if (addVehicleResponse != null)
             {
-                await connection.InvokeAsync("TempData",
-                    IdTextBox.Text, TempTextBox.Text);
-                await connection.InvokeAsync("HumidData",
-                    IdTextBox.Text, HumidTextBox.Text);
-                await connection.InvokeAsync("GPSData",
-                    IdTextBox.Text, LatTextBox.Text, LongTextBox.Text);
+                MessageBox.Show($"New Vehicle Record has been added.");
             }
-            catch (Exception ex)
-            {
-                TempListView.Items.Add(ex.Message);
-            }
-        **/
+            GetAllVehiclesTemp();
+            GetAllVehiclesHumid();
+            GetAllVehiclesLocation();
+
 
         }
-        private void Update_Button(object sender, RoutedEventArgs e)
+        private async void Update_Button(object sender, RoutedEventArgs e)
         {
-
+            var selectedVehicle = int.Parse(IdUpdate.Text);
+            var vehicleUpdate = new UpdateVehicle
+            {
+                temp = int.Parse(TempUpdate.Text),
+                humidity = int.Parse(HumidUpdate.Text),
+                
+            };
+            var carUpdateResponse = await VehicleService.UpdateVehicle(vehicleUpdate, selectedVehicle);
+            if (carUpdateResponse != null)
+            {
+                GetAllVehiclesTemp();
+                GetAllVehiclesHumid();
+                GetAllVehiclesLocation();
+            }
+            
         }
-        private void Delete_Button(object sender, RoutedEventArgs e)
+        private async void Delete_Button(object sender, RoutedEventArgs e)
         {
+           var selectedVehicle = int.Parse(IdDelete.Text);
+           var carDeleteResponse = await VehicleService.DeleteVehicle(selectedVehicle);
+            MessageBox.Show(carDeleteResponse);
+            GetAllVehiclesTemp();
+            GetAllVehiclesHumid();
+            GetAllVehiclesLocation();
 
         }
         private void AddPanel_Button(object sender, RoutedEventArgs e)
@@ -141,7 +127,19 @@ namespace SensorGUI.wpf
             CreatePanel.Visibility = Visibility.Hidden;
         }
         
-
+        private async void RedPanel_Check(object sender, RoutedEventArgs e)
+        {
+            TableStackPanel.Visibility = Visibility.Hidden;
+            RedAlertStackPanel.Visibility = Visibility.Visible;
+            redAlertVehicles = await VehicleService.RedAlertVehiclesTemp();
+            AlertListView.ItemsSource = redAlertVehicles;
+        }
+        private void RedPanel_Unchecked(object sender, RoutedEventArgs e)
+        {
+            RedAlertStackPanel.Visibility = Visibility.Hidden;
+            TableStackPanel.Visibility = Visibility.Visible;  
+            
+        }
         private void SignOut_Button(object sender, RoutedEventArgs e)
         {
 
@@ -156,48 +154,38 @@ namespace SensorGUI.wpf
             TableStackPanel.Visibility = Visibility.Hidden;
 
         }
+        private void Refresh_Button(object sender, RoutedEventArgs e)
+        {
+            GetAllVehiclesTemp();
+            GetAllVehiclesHumid();
+            GetAllVehiclesLocation();
+
+        }
         private void TableView_Button(object sender, RoutedEventArgs e)
         {
             TableStackPanel.Visibility = Visibility.Visible;
             GraphStackPanel.Visibility = Visibility.Hidden;
 
         }
-        private void TempListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void Search_Button(object sender, RoutedEventArgs e)
         {
-            if (e.AddedItems.Count >= 1)
-            {
-                selectedVehicle = (Vehicle)e.AddedItems[0];
-                VehicleTempID.Text = selectedVehicle.vehicleId.ToString();
-                VehicleTemp.Text = selectedVehicle.temp.ToString();
+            
+            getTempVehicles = await VehicleService.GetVehicleTemp(int.Parse(SearchBar.Text));
+            getHumidVehicles = await VehicleService.GetVehicleHumid(int.Parse(SearchBar.Text));
+            getLocationVehicles = await VehicleService.GetVehicleLocation(int.Parse(SearchBar.Text));
+            
+            TempListView.ItemsSource = getTempVehicles;
+            HumidListView.ItemsSource = getHumidVehicles;
+            GPSListView.ItemsSource = getLocationVehicles;
 
 
-
-            }
-        }
-        private void HumidListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (e.AddedItems.Count >= 1)
-            {
-                selectedVehicle = (Vehicle)e.AddedItems[0];
-                VehicleHumidID.Text = selectedVehicle.vehicleId.ToString();
-                VehicleHumid.Text = selectedVehicle.humidity.ToString();
-            }
-
-        }
-        private void GPSListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (e.AddedItems.Count >= 1)
-            {
-                location = (Location)e.AddedItems[0];
-                VehicleGPSID.Text = location.vehicleId.ToString();
-                VehicleGPSLat.Text = location.latitude.ToString();
-                VehicleGPSLat.Text = location.longitude.ToString();
-                VehicleGPSTime.Text = location.time.ToString();
-            }
         }
         
-        
-           
+
+
+
+
 
     }
 }
+
