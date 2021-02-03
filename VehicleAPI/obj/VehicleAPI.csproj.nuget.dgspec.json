@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleAPI\\VehicleAPI.csproj": {}
+    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleAPI\\VehicleAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleAPI\\VehicleAPI.csproj": {
+    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleAPI\\VehicleAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
+        "projectUniqueName": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
         "projectName": "VehicleAPI",
-        "projectPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
-        "packagesPath": "C:\\Users\\p\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleAPI\\obj\\",
+        "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
+        "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\VehicleLib.csproj": {
-                "projectPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\VehicleLib.csproj"
+              "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj": {
+                "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj"
               }
             }
           }
@@ -89,17 +89,17 @@
         }
       }
     },
-    "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\VehicleLib.csproj": {
+    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\VehicleLib.csproj",
+        "projectUniqueName": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj",
         "projectName": "VehicleLib",
-        "projectPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\VehicleLib.csproj",
-        "packagesPath": "C:\\Users\\p\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\obj\\",
+        "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj",
+        "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

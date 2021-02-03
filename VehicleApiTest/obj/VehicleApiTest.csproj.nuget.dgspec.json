@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj": {}
+    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleApiTest\\VehicleApiTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj": {
+    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleApiTest\\VehicleApiTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj",
-        "projectName": "VehicleLib",
-        "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj",
+        "projectUniqueName": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleApiTest\\VehicleApiTest.csproj",
+        "projectName": "VehicleApiTest",
+        "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleApiTest\\VehicleApiTest.csproj",
         "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\obj\\",
+        "outputPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleApiTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,26 +37,24 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "EntityFramework": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[6.4.4, )"
+              "version": "[16.5.0, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "coverlet.collector": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[1.2.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "xunit": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[2.4.0, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[2.4.0, )"
             }
           },
           "imports": [
