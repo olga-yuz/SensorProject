@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleAPI", "VehicleAPI\Ve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationTest", "LocationTest\LocationTest.csproj", "{9B98442A-9569-4B72-9C24-FB685AA59CCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlertTest", "AlertTest\AlertTest.csproj", "{6D9DB256-B2FB-42CF-B67B-02565B2FDF01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorGUI.wpf", "SensorProject-WPF\SensorGUI.wpf\SensorGUI.wpf.csproj", "{2314549D-8F86-4D4C-8582-C491C1C44370}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{9B98442A-9569-4B72-9C24-FB685AA59CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B98442A-9569-4B72-9C24-FB685AA59CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B98442A-9569-4B72-9C24-FB685AA59CCA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D9DB256-B2FB-42CF-B67B-02565B2FDF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D9DB256-B2FB-42CF-B67B-02565B2FDF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D9DB256-B2FB-42CF-B67B-02565B2FDF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D9DB256-B2FB-42CF-B67B-02565B2FDF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2314549D-8F86-4D4C-8582-C491C1C44370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2314549D-8F86-4D4C-8582-C491C1C44370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2314549D-8F86-4D4C-8582-C491C1C44370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2314549D-8F86-4D4C-8582-C491C1C44370}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

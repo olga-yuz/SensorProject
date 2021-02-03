@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9yMF0VcdCX7kNhSPMKGM9kg8RRwekjQ5aVjn9e9TNV2tErLaVIiMLWzh+PQLDy0++xS4XgVCWZkXfLvmL1z0pw==",
+  "dgSpecHash": "zVgwwIO1Ak9LiE799/SammHvia6Jepp6Wstz1rOQYzyanCJup01u0y+qnajf9SD/iTed6zXyRL0Fjk/5P5dDEg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleAPI\\VehicleAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Olga\\.nuget\\packages\\coverlet.msbuild\\3.0.2\\coverlet.msbuild.3.0.2.nupkg.sha512",
     "C:\\Users\\Olga\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Olga\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Olga\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -114,5 +115,12 @@
     "C:\\Users\\Olga\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Olga\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleAPI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
