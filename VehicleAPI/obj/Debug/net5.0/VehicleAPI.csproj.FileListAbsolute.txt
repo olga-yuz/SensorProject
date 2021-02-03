@@ -142,3 +142,4 @@ C:\Users\winni\OneDrive\Documents\GitHub\SensorProject\VehicleAPI\obj\Debug\net5
 C:\Users\winni\OneDrive\Documents\GitHub\SensorProject\VehicleAPI\obj\Debug\net5.0\ref\VehicleAPI.dll
 C:\Users\winni\OneDrive\Documents\GitHub\SensorProject\VehicleAPI\obj\Debug\net5.0\VehicleAPI.pdb
 C:\Users\winni\OneDrive\Documents\GitHub\SensorProject\VehicleAPI\obj\Debug\net5.0\VehicleAPI.genruntimeconfig.cache
+C:\Users\winni\OneDrive\Documents\GitHub\SensorProject\VehicleAPI\bin\Debug\net5.0\CoverletSourceRootsMapping
