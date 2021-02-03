@@ -6686,19 +6686,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\winni\\.nuget\\packages\\": {}
+    "C:\\Users\\p\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\Authorization\\Authorization.csproj",
+      "projectUniqueName": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\Authorization\\Authorization.csproj",
       "projectName": "Authorization",
-      "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\Authorization\\Authorization.csproj",
-      "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\Authorization\\obj\\",
+      "projectPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\Authorization\\Authorization.csproj",
+      "packagesPath": "C:\\Users\\p\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\Authorization\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\p\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

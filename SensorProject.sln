@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorApi", "SensorApi\Sens
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleAPI", "VehicleAPI\VehicleAPI.csproj", "{97B596CB-A52E-460B-B1E8-8C145E3100C0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorGUI.wpf", "..\..\..\..\..\source\repos\BenI-QA\SensorProject\SensorGUI.wpf\SensorGUI.wpf.csproj", "{59EBF4AF-236F-479F-9785-AC74C25DA32A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{97B596CB-A52E-460B-B1E8-8C145E3100C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97B596CB-A52E-460B-B1E8-8C145E3100C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97B596CB-A52E-460B-B1E8-8C145E3100C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59EBF4AF-236F-479F-9785-AC74C25DA32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EBF4AF-236F-479F-9785-AC74C25DA32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59EBF4AF-236F-479F-9785-AC74C25DA32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59EBF4AF-236F-479F-9785-AC74C25DA32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
