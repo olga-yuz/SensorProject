@@ -13,7 +13,7 @@ namespace VehicleAPI.Controllers
     [ApiController]
     public class VehicleController : ControllerBase
     {
-      
+
         private ILogger<VehicleController> _logger;
         private ApplicationDbContext dbContext;
         private IRepositoryWrapper repository;
@@ -24,16 +24,16 @@ namespace VehicleAPI.Controllers
             repository = repositoryWrapper;
         }
         [HttpGet]
-        public  IEnumerable<VehicleViewModel> Get()
-        { 
-          var allVehicles = repository.Vehicles.FindAll();
-        List<VehicleViewModel> VehicleViewModels = new List<VehicleViewModel>();
+        public IEnumerable<VehicleViewModel> Get()
+        {
+            var allVehicles = repository.Vehicles.FindAll();
+            List<VehicleViewModel> VehicleViewModels = new List<VehicleViewModel>();
             foreach (var vehicle in allVehicles)
             {
                 VehicleViewModels.Add(new VehicleViewModel() { Vehicle = vehicle });
             }
-         
-        _logger.LogInformation($"{VehicleViewModels.Count} vehicles gotten.");
+
+            _logger.LogInformation($"{VehicleViewModels.Count} vehicles gotten.");
             return VehicleViewModels;
         }
 
@@ -42,16 +42,16 @@ namespace VehicleAPI.Controllers
         public ActionResult<VehicleViewModel> Get(int vehicleId)
         {
             var vehicleFound = repository.Vehicles.FindByCondition(c => c.vehicleId == vehicleId).FirstOrDefault();
-           
+
             if (vehicleFound == null)
             {
                 _logger.LogWarning($"Vehicle with vehicleId {vehicleId} not found.");
                 return NotFound($"Vehicle with vehicleId {vehicleId} not found.");
             }
             _logger.LogInformation($"Vehicle with vehicleId {vehicleId} gotten");
-           
-      
-            var vehicleFoundViewModel = new VehicleViewModel { Vehicle = vehicleFound};
+
+
+            var vehicleFoundViewModel = new VehicleViewModel { Vehicle = vehicleFound };
             return vehicleFoundViewModel;
         }
 
@@ -60,19 +60,19 @@ namespace VehicleAPI.Controllers
         public ActionResult<VehicleViewModel> Post([FromBody] AddVehicle vehicle)
         {
             var existingVehicle = repository.Vehicles.FindByCondition(c => c.temp == vehicle.temp && c.humidity == vehicle.humidity).FirstOrDefault();
-         
+
             if (existingVehicle != null)
             {
                 _logger.LogError("Data conflict");
                 return Conflict("Vehicle already exists.");
             }
-            
+
 
             var addedVehicle = repository.Vehicles.Create(new Vehicle { temp = vehicle.temp, humidity = vehicle.humidity });
-            
+
             repository.Save();
-            
-            return new VehicleViewModel { Vehicle = addedVehicle};
+
+            return new VehicleViewModel { Vehicle = addedVehicle };
         }
         // PUT api/<VehicleController>/5
         [HttpPut("{vehicleId}")]
@@ -85,16 +85,16 @@ namespace VehicleAPI.Controllers
                 _logger.LogWarning($"Vehicle with vehicleId {vehicleId} not found.");
                 return NotFound($"Vehicle with vehicleId {vehicleId} not found.");
             }
-           
+
             vehicleToUpdate.temp = vehicle.temp;
             vehicleToUpdate.humidity = vehicle.humidity;
             var updatedVehicle = repository.Vehicles.Update(vehicleToUpdate);
             repository.Save();
-          
-            var vehicleFoundViewModel = new VehicleViewModel { Vehicle = vehicleToUpdate};
+
+            var vehicleFoundViewModel = new VehicleViewModel { Vehicle = vehicleToUpdate };
             return vehicleFoundViewModel;
         }
-     
+
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

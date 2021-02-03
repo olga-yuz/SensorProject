@@ -18,4 +18,11 @@ namespace VehicleLib
         public float longitude { get; set; }
         public DateTime time { get; set; }
     }
+    public class AddLocation
+    {
+        public float latitude { get; set; }
+        public float longitude { get; set; }
+        public DateTime time { get; set; }
+    }
+
 }

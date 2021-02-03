@@ -6081,19 +6081,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Olga\\.nuget\\packages\\": {}
+    "C:\\Users\\p\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj",
+      "projectUniqueName": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\VehicleLib.csproj",
       "projectName": "VehicleLib",
-      "projectPath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj",
-      "packagesPath": "C:\\Users\\Olga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\obj\\",
+      "projectPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\VehicleLib.csproj",
+      "packagesPath": "C:\\Users\\p\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\p\\Documents\\QA-Testing\\.NET\\Project\\SensorProject\\VehicleLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Olga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\p\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
