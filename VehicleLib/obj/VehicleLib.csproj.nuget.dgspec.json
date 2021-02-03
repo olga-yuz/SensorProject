@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj": {}
+    "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj": {
+    "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj",
+        "projectUniqueName": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj",
         "projectName": "VehicleLib",
-        "projectPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\VehicleLib.csproj",
-        "packagesPath": "C:\\Users\\winni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\winni\\OneDrive\\Documents\\GitHub\\SensorProject\\VehicleLib\\obj\\",
+        "projectPath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\VehicleLib.csproj",
+        "packagesPath": "C:\\Users\\Olga\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Olga\\source\\Git\\SensorProject\\VehicleLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\winni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Olga\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
