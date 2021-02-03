@@ -1,5 +1,7 @@
 # SensorProject
 This project is our Alpha Groups take on a Web API acting as a Server Communcating with a Desktop GUI (Client).
+This is project is built to display and monitor the performance of vehicles. It can store, read and track vehicle's data that has been input using 3 different sensors; Temperature, Humidity and GPS.
+The data is read using sensor API endpoints and this is displayed in a dashboard to view this data.
 
 ## Getting Started
 
@@ -15,5 +17,6 @@ Use the command:
 git clone https://github.com/olga-yuz/SensorProject.git
 ```
 This will import this repository to your selected file directory
+Open the file
 
 ## Funtino
