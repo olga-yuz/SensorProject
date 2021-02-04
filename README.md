@@ -19,6 +19,8 @@ git clone https://github.com/olga-yuz/SensorProject.git
 This will import this repository to your selected file directory
 Then you can open the file in Visual Studio
 
+- SQL Server Management Studio (SSMS) can be installed to manage authorization: [Download SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+
 ### NuGet Packages
 - Moq
 - Microsoft.EntityFrameworkCore
